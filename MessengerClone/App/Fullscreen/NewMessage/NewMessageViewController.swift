@@ -219,7 +219,7 @@ final class NewMessageViewController: UIViewController {
             var config = cell.defaultContentConfiguration()
             config.text = "Create a new group"
             config.textProperties.font = .systemFont(ofSize: 15, weight: .semibold)
-            config.image = UIImage(named: "ThreePeopleIcon")
+            config.image = UIImage(named: "custom-three.people")
             config.imageProperties.maximumSize = .init(width: 40, height: 40)
             config.imageProperties.cornerRadius = 20
             config.directionalLayoutMargins.top = 10
