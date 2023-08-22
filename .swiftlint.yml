@@ -1,0 +1,104 @@
+excluded:
+  - ${PWD}/Carthage
+  - ${PWD}/Pods
+  - ${PWD}/DerivedData
+
+included:
+  - ${PWD}
+
+force_cast: warning
+
+identifier_name:
+  excluded:
+    - T
+    - i
+    - x
+    - y
+    - z
+    - r
+    - db
+    - id
+    - vc
+
+line_length:
+  ignores_urls: true
+  ignores_function_declarations: true
+  ignores_comments: true
+  warning: 150
+
+function_body_length:
+  warning: 70
+
+attributes:
+  always_on_same_line:
+    - "@objc"
+    - "@available"
+
+nesting:
+  type_level:
+    warning: 3
+    error: 6
+  function_level:
+    warning: 5
+    error: 10
+
+analyzer_rules:
+  - unused_declaration
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+
+file_length:
+  warning: 500
+  error: 750
+
+opt_in_rules:
+  - attributes
+  - array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array
+  - closure_spacing # Closure expressions should have a single space inside each brace
+  - collection_alignment # All elements in a collection literal should be vertically aligned
+  - comma_inheritance # Use commas to separate types in inheritance lists
+  - contains_over_first_not_nil # Prefer contains over first(where:) != nil and firstIndex(where:) != nil
+  - contains_over_filter_count # Prefer contains over comparing filter(where:).count to 0
+  - contains_over_filter_is_empty # Prefer contains over using filter(where:).isEmpty
+  - contains_over_range_nil_comparison # Prefer contains over range(of:) != nil and range(of:) == nil
+  - convenience_type # Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation
+  - discouraged_assert # Prefer assertionFailure() and/or preconditionFailure() over assert(false)
+  - empty_count # Prefer checking isEmpty over comparing count to zero
+  - empty_collection_literal # Prefer checking isEmpty over comparing collection to an empty array or dictionary literal
+  - empty_string # Prefer checking isEmpty over comparing string to an empty string literal
+  - explicit_init # Explicitly calling .init() should be avoided
+  - first_where # Prefer using .first(where:) over .filter { }.first in collections for performance
+  - flatmap_over_map_reduce # Prefer flatMap over map followed by reduce([], +)
+  - force_unwrapping # Force unwrapping should be avoided
+  - force_try # Force tries should be avoided
+  - indentation_width
+  - identical_operands # Don't compare the same thing, lol
+  - joined_default_parameter # perfer joined() over joined(seperator: "")
+  - last_where # Prefer using .last(where:) over .filter { }.last in collections
+  - local_doc_comment # Prefer regular comments over doc comments in local scopes
+  - lower_acl_than_parent # Ensure declarations have a lower access control level than their enclosing parent
+  - modifier_order # Modifier order should be consistent
+  - operator_usage_whitespace # Operators should be surrounded by a single whitespace when they are being used
+  - optional_enum_case_matching # Matching an enum case against an optional enum without ‘?’ is supported on Swift 5.1 and above
+  - overridden_super_call # Some overridden methods should always call super.
+  - pattern_matching_keywords # Combine multiple pattern matching bindings by moving keywords out of tuples
+  - prohibited_interface_builder # Disallows the usage of @IBOutlet and @IBAction
+  - prohibited_super_call # Some methods should not call super.
+  - reduce_into # Prefer reduce(into:_:) over reduce(_:_:) for copy-on-write types
+  - redundant_type_annotation # Variables should not have redundant type annotation
+  - shorthand_optional_binding # Use shorthand syntax for optional binding
+  - sorted_first_last # Prefer using min() or max() over sorted().first or sorted().last
+  - toggle_bool # Prefer toggle() instead of boolean = !boolean
+  - unused_declaration # Declarations should be referenced at least once within all files linted
+  - vertical_parameter_alignment_on_call # Function parameters should be aligned vertically if they’re in multiple lines in a method call
+  - yoda_condition # The constant literal should be placed on the right-hand side of the comparison operator
+
+indentation_width:
+  indentation_width: 4
+
+disabled_rules:
+  - trailing_comma
+
+vertical_whitespace:
+  max_empty_lines: 2

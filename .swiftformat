@@ -1,0 +1,86 @@
+# Exclude checkout directories for common package managers
+--exclude Pods,**/.build,**/Package.swift,vendor/bundle,scripts,fastlane,**/L10n.swift,**/Assets.swift,**/*.generated.swift
+
+# options
+--swiftversion 5.7
+--indent 4 #indent
+--indentstrings true #indent
+--someAny disabled # opaqueGenericParameters
+--wraparguments before-first # wrapArguments
+--wrapparameters before-first # wrapArguments
+--wrapcollections before-first # wrapArguments
+--wrapconditions before-first # wrapArguments
+--wrapreturntype if-multiline #wrapArguments
+--wrapeffects if-multiline #wrapArguments
+--wraptypealiases before-first # wrapArguments
+--funcattributes same-line # wrapAttributes
+--typeattributes prev-line # wrapAttributes
+--varattributes same-line # wrapAttributes
+--wrapternary before-operators # wrap
+
+## wrap
+--maxwidth 150
+
+--rules andOperator
+--rules anyObjectProtocol
+--rules applicationMain
+--rules blankLineAfterImports
+--rules blankLinesAtEndOfScope
+--rules blankLinesAtStartOfScope
+--rules blankLinesBetweenImports
+--rules blankLinesBetweenScopes
+--rules blockComments
+--rules braces
+--rules conditionalAssignment
+--rules consecutiveBlankLines
+--rules consecutiveSpaces
+--rules duplicateImports
+--rules elseOnSameLine
+--rules emptyBraces
+--rules enumNamespaces
+--rules extensionAccessControl
+--rules fileHeader
+--rules hoistPatternLet
+--rules hoistTry
+--rules indent
+--rules initCoderUnavailable
+--rules isEmpty
+--rules leadingDelimiters
+--rules modifierOrder
+--rules numberFormatting
+--rules opaqueGenericParameters
+--rules redundantExtensionACL
+--rules redundantFileprivate
+--rules redundantGet
+--rules redundantInit
+--rules redundantInternal
+--rules redundantLet
+--rules redundantLetError
+--rules redundantNilInit
+--rules redundantOptionalBinding
+--rules redundantParens
+--rules redundantPattern
+--rules redundantRawValues
+--rules redundantVoidReturnType
+--rules semicolons
+--rules sortDeclarations
+--rules sortSwitchCases
+--rules spaceAroundBraces
+--rules spaceAroundBrackets
+--rules spaceAroundComments
+--rules spaceAroundGenerics
+--rules spaceAroundOperators
+--rules spaceAroundParens
+--rules spaceInsideBraces
+--rules spaceInsideBrackets
+--rules spaceInsideComments
+--rules spaceInsideGenerics
+--rules spaceInsideParens
+--rules todos
+--rules trailingCommas
+--rules trailingSpace
+--rules unusedArguments
+--rules void
+--rules wrap
+--rules wrapArguments
+--rules wrapAttributes
