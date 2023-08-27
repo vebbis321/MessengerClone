@@ -84,6 +84,15 @@ extension LocalDatabase {
         let publisher = observation.publisher(in: reader)
         return publisher.eraseToAnyPublisher()
     }
+
+    func observeSuggestedUser(with uuid: String) -> AnyPublisher<CachedUser?, Error> {
+        let observation = ValueObservation.tracking { db in
+            try CachedUser.fetchOne(db, key: uuid)
+        }
+
+        let publisher = observation.publisher(in: reader)
+        return publisher.eraseToAnyPublisher()
+    }
 }
 
 // MARK: - Delete

@@ -43,7 +43,7 @@ nesting:
     error: 10
 
 analyzer_rules:
-  - unused_declaration
+  - unused_declaration # Declarations should be referenced at least once within all files linted
 
 cyclomatic_complexity:
   ignores_case_statements: true
@@ -90,8 +90,6 @@ opt_in_rules:
   - shorthand_optional_binding # Use shorthand syntax for optional binding
   - sorted_first_last # Prefer using min() or max() over sorted().first or sorted().last
   - toggle_bool # Prefer toggle() instead of boolean = !boolean
-  - unused_declaration # Declarations should be referenced at least once within all files linted
-  - vertical_parameter_alignment_on_call # Function parameters should be aligned vertically if they’re in multiple lines in a method call
   - yoda_condition # The constant literal should be placed on the right-hand side of the comparison operator
 
 indentation_width:

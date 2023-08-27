@@ -40,4 +40,3 @@ struct LastMessageCellConfiguration: ContentConfigurable {
         return updateConfiguration
     }
 }
-

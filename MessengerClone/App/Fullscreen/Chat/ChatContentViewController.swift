@@ -323,8 +323,7 @@ private extension ChatContentViewController {
             }
 
         // listCell
-        let chatListCellRegistration = UICollectionView
-            .CellRegistration<
+        let chatListCellRegistration = UICollectionView.CellRegistration<
                 ListCollectionViewCell<ChatMessageCellConfiguration>,
                 ChatMessageItemViewModel
             > { [weak self] cell, indexPath, itemViewModel in

@@ -51,11 +51,4 @@ struct LastMessageItemViewModel: Hashable {
             return .systemFont(ofSize: 14, weight: .bold)
         }
     }
-    
-    func getCachedUser() async throws -> CachedUser? {
-        guard let uuid = item.members.first(where: { $0 != currentMember })?.userId else { return nil }
-        
-        let cachedUser = try await LocalDatabase.shared.readForId(uuid: uuid)
-        return cachedUser
-    }
 }

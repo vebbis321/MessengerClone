@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class LastMessageCellContentView: UIView, UIContentView {
     // MARK: - Private components
@@ -41,6 +42,8 @@ class LastMessageCellContentView: UIView, UIContentView {
 
     private let spacer: UIView = .createSpacer()
 
+    private var userSubscription: AnyCancellable?
+
     // MARK: - Properties
     private var currentConfiguration: LastMessageCellConfiguration!
 
@@ -64,6 +67,9 @@ class LastMessageCellContentView: UIView, UIContentView {
 
         // apply the configuration (set data to UI elements / define custom content view appearance)
         apply(configuration: configuration)
+
+        // listen to the cached user in the local database
+        subcribeToRecipientUpdates(configuration: configuration)
     }
 
     @available(*, unavailable) required init?(coder _: NSCoder) {
@@ -75,12 +81,6 @@ class LastMessageCellContentView: UIView, UIContentView {
         guard currentConfiguration != configuration,
             let viewModel = configuration.viewModel else {
             return
-        }
-
-        Task {
-            let cachedUser = try await viewModel.getCachedUser()
-            nameLabel.text = cachedUser?.name
-            imageView.configure(with: cachedUser?.profileImageUrl)
         }
 
         currentConfiguration = configuration
@@ -122,5 +122,30 @@ class LastMessageCellContentView: UIView, UIContentView {
         bottomConstraint.priority = .defaultHigh
         bottomConstraint.isActive = true
         hStack.heightAnchor.constraint(equalToConstant: 80).isActive = true
+    }
+
+    // MARK: - Listen
+    private func subcribeToRecipientUpdates(configuration: LastMessageCellConfiguration) {
+
+        // TODO: Should be handled differently.
+        // Implement solution for group chat cell
+        // What if some of the cases fail?
+        // Maybe move this listener away from this class?
+
+        guard let viewModel = configuration.viewModel else {
+            return
+        }
+
+        guard let uuid = viewModel.item.members.first(where: { $0 != viewModel.currentMember })?.userId else { return }
+
+        userSubscription = LocalDatabase
+            .shared
+            .observeSuggestedUser(with: uuid)
+            .sink { completion in
+                print(completion)
+            } receiveValue: { [weak self] user in
+                self?.imageView.configure(with: user?.profileImageUrl)
+                self?.nameLabel.text = user?.name
+            }
     }
 }

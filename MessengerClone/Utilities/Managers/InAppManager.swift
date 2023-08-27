@@ -62,6 +62,7 @@ class InAppManager {
 
             let currentUsers = try await LocalDatabase.shared.readAll()
             // check if the cached data (LocalDatabase) has users that the actual database (Firestore) doesn't have
+            
             let deletedUsersIds = Set(listenerOutputs.map { $0.data.uuid }).subtracting(currentUsers.map { $0.uuid })
             guard !deletedUsersIds.isEmpty else { return }
             try await LocalDatabase.shared.deleteCachedUsers(uuids: Array(deletedUsersIds))
