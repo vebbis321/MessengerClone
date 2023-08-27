@@ -1084,7 +1084,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"$HOME/.mint/bin\"; then\n  PATH=\"$HOME/.mint/bin:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, run setup.sh (or download from https://github.com/realm/SwiftLint)\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#if test -d \"$HOME/.mint/bin\"; then\n#  PATH=\"$HOME/.mint/bin:${PATH}\"\n#fi\n\n#export PATH\n\n#if which swiftlint >/dev/null; then\n#  swiftlint\n#else\n#  echo \"warning: SwiftLint not installed, run setup.sh (or download from https://github.com/realm/SwiftLint)\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

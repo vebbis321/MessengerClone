@@ -1,4 +1,4 @@
-# Messenger Clone iOS 14+
+# Messenger clone iOS 14+
 
 This is the source code for the Messenger clone application. The app demonstrates how you can build the core functionality of Messenger in Swift, supporting iOS 14+ without any UI-libraries except SDWebImage. Since the app supports iOS 14, the application is built as a hybrid where 95% of the UI is UIKit and 5% is SwiftUI.
 
@@ -24,7 +24,6 @@ Tutorials and a full demo are on my YouTube channel, with articles to accommodat
     - Cells with custom UIContentConfiguration
     - Diffable data source instead of UICollectionViewDataSource
 - My own custom sheet (a native customizable sheet is only available in iOS 15+)
-- Professional [SwiftLint](https://github.com/realm/SwiftLint) and [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) files inspired by [Airbnb](https://github.com/airbnb/swift) and [Kodeco](https://github.com/kodecocodes/swift-style-guide/tree/main)
 
 ## Screenshots
 
@@ -47,8 +46,6 @@ Here are some screenshots from the authentication flow:
 
 > **_NOTE:_**  The screenshots are from 2023, but Meta have updated their
 > UI recently.
-
-> **_NOTE:_** A more detailed [demo]().
 
 
 
@@ -105,5 +102,4 @@ Here is a list of things I would do if I had more time. I may fork the repositor
 4. Enable sign in with email and password in Firebase Auth
 5. Add the GoogleService-Info.plist to the project
 6. Run the app
-
 
