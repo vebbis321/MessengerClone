@@ -17,7 +17,7 @@ Tutorials and a full demo are on my YouTube channel, with articles to accommodat
     - [Auth](https://firebase.google.com/docs/auth) for authentication
     - [Firestore](https://firebase.google.com/docs/firestore) as the remote database for the users (better queries)
     - [RTDB](https://firebase.google.com/docs/database) as the remote database for the chat data (better for simple queries and frequent data)
-My custom library [FireThel](https://github.com/vebbis321/FireThel) for simplifying redundant Firebase code
+- My custom library [FireThel](https://github.com/vebbis321/FireThel) for simplifying redundant Firebase code
 - [GRDB](https://github.com/groue/GRDB.swift/tree/master) for local caching of the users
 - UICollectionViewCompositionalLayout
     - Lists created with list configuration instead of UITableViews
@@ -25,8 +25,6 @@ My custom library [FireThel](https://github.com/vebbis321/FireThel) for simplify
     - Diffable data source instead of UICollectionViewDataSource
 - My own custom sheet (a native customizable sheet is only available in iOS 15+)
 - Professional [SwiftLint](https://github.com/realm/SwiftLint) and [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) files inspired by [Airbnb](https://github.com/airbnb/swift) and [Kodeco](https://github.com/kodecocodes/swift-style-guide/tree/main)
-
-
 
 ## Screenshots
 
@@ -50,7 +48,7 @@ Here are some screenshots from the authentication flow:
 > **_NOTE:_**  The screenshots are from 2023, but Meta have updated their
 > UI recently.
 
-> **_NOTE:_** I have more detailed demo on YouTube.
+> **_NOTE:_** A more detailed [demo]().
 
 
 
@@ -92,9 +90,12 @@ userChats // the amount of chats (.childAdded on userId)
 
 ## What should be done
 
-Here is a list of things I would do if I had more time. I may fork this repository in the future and implement them.
+Here is a list of things I would do if I had more time. I may fork the repository in the future and implement them.
 
-1. blablba 
+- [ ] Move all the UI into a seperate repo, like [Finn](https://github.com/finn-no/FinniversKit). Why? The code is too long, and it is hard to test the components. There is also room for composition.
+- [ ] Create a cloud function for creating an account. Why? A single operation for authenticating users and creating documents can’t be implemented through Firebase Auth and Firestore.
+- [ ] Clean up the flows where users and chats are loaded simultaneously. Why? All the errors aren't properly handled, and there is some inconsistency.
+- [ ] Add the option for group chats and update the components accordingly.
 
 # Installation
 
