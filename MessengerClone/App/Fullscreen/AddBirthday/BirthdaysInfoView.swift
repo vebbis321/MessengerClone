@@ -22,10 +22,7 @@ final class BirthdaysInfoView: UIView {
         let textView = TappableTextView(customBackgroundColor: .secondarySystemBackground)
         textView.translatesAutoresizingMaskIntoConstraints = false
         // linkTextView
-        let linkText = """
-            Learn \
-            more about how we use your info in our Privacy Policy
-            """
+        let linkText = "Learn \nmore about how we use your info in our Privacy Policy"
         textView
             .text =
             """

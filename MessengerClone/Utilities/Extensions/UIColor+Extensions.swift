@@ -22,7 +22,7 @@ struct MessengerColorTheme {
     let tintColor = UIColor(named: "TintColor")
     let placeholder = UIColor(named: "Placeholder")
     let floatingLabel = UIColor(named: "FloatingLabel")
-    let hyperlink = UIColor(named: "Hyperlink")
+    let hyperlink = UIColor(named: "HyperLink") // fix asset name
     let alertText = UIColor(named: "AlertText")
     let moreRow = UIColor(named: "MoreRow")
     let arhiveRow = UIColor(named: "ArchiveRow")

@@ -20,7 +20,6 @@
 		0A58436F2A94CEE60084DCDC /* MessagesContentViewControlller+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58436E2A94CEE60084DCDC /* MessagesContentViewControlller+Types.swift */; };
 		0A5843752A94DE660084DCDC /* MessageBarView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5843742A94DE660084DCDC /* MessageBarView+ViewModel.swift */; };
 		0A5843772A94DE930084DCDC /* MessageBarView+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5843762A94DE930084DCDC /* MessageBarView+ViewState.swift */; };
-		0A5843792A9501A00084DCDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A5843782A95019F0084DCDC /* GoogleService-Info.plist */; };
 		0A9E37FA2A93397B0070B79E /* FireThelFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A9E37F92A93397B0070B79E /* FireThelFirestore */; };
 		0A9E37FC2A93397B0070B79E /* FireThelRealtimeDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0A9E37FB2A93397B0070B79E /* FireThelRealtimeDatabase */; };
 		0AAB96352A8517CF00514312 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AAB96342A8517CF00514312 /* FirebaseAuth */; };
@@ -71,6 +70,7 @@
 		23AA2F992A62E41700E639D9 /* AuthTextField+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA2F982A62E41700E639D9 /* AuthTextField+States.swift */; };
 		23AA2F9B2A62E43F00E639D9 /* AuthTextField+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA2F9A2A62E43F00E639D9 /* AuthTextField+ViewModel.swift */; };
 		23AA2F9D2A62E4DE00E639D9 /* AuthTextField+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA2F9C2A62E4DE00E639D9 /* AuthTextField+Types.swift */; };
+		23ACB93E2A9B4D6B0065BC16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23ACB93D2A9B4D6B0065BC16 /* GoogleService-Info.plist */; };
 		23B622DA2A4477A2003BBA9A /* InAppContainerRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B622D92A4477A2003BBA9A /* InAppContainerRootViewController.swift */; };
 		23B622DD2A458433003BBA9A /* InAppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B622DC2A458433003BBA9A /* InAppTabBarController.swift */; };
 		23B622DF2A458463003BBA9A /* InAppContainerRootViewController+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B622DE2A458463003BBA9A /* InAppContainerRootViewController+State.swift */; };
@@ -196,7 +196,6 @@
 		0A58436E2A94CEE60084DCDC /* MessagesContentViewControlller+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessagesContentViewControlller+Types.swift"; sourceTree = "<group>"; };
 		0A5843742A94DE660084DCDC /* MessageBarView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageBarView+ViewModel.swift"; sourceTree = "<group>"; };
 		0A5843762A94DE930084DCDC /* MessageBarView+ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageBarView+ViewState.swift"; sourceTree = "<group>"; };
-		0A5843782A95019F0084DCDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AAE32682A5D4F5E00697F80 /* ContentConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentConfigurable.swift; sourceTree = "<group>"; };
 		0AAE326B2A5D524000697F80 /* CustomSDWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSDWebImageView.swift; sourceTree = "<group>"; };
 		0AAE326E2A5D53B300697F80 /* SettingsView+ListRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView+ListRows.swift"; sourceTree = "<group>"; };
@@ -238,6 +237,7 @@
 		23AA2F982A62E41700E639D9 /* AuthTextField+States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthTextField+States.swift"; sourceTree = "<group>"; };
 		23AA2F9A2A62E43F00E639D9 /* AuthTextField+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthTextField+ViewModel.swift"; sourceTree = "<group>"; };
 		23AA2F9C2A62E4DE00E639D9 /* AuthTextField+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthTextField+Types.swift"; sourceTree = "<group>"; };
+		23ACB93D2A9B4D6B0065BC16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23B622D92A4477A2003BBA9A /* InAppContainerRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppContainerRootViewController.swift; sourceTree = "<group>"; };
 		23B622DC2A458433003BBA9A /* InAppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppTabBarController.swift; sourceTree = "<group>"; };
 		23B622DE2A458463003BBA9A /* InAppContainerRootViewController+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InAppContainerRootViewController+State.swift"; sourceTree = "<group>"; };
@@ -562,7 +562,7 @@
 				23E02A7029DAD3530013B605 /* AppDelegate.swift */,
 				23E02ABD29DAD3530013B605 /* SceneDelegate.swift */,
 				23E0297029DAC41D0013B605 /* Info.plist */,
-				0A5843782A95019F0084DCDC /* GoogleService-Info.plist */,
+				23ACB93D2A9B4D6B0065BC16 /* GoogleService-Info.plist */,
 				23E02AF329DAD37C0013B605 /* Assets.xcassets */,
 			);
 			path = MessengerClone;
@@ -1060,7 +1060,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E02B4F29DAD4980013B605 /* Assets.xcassets in Resources */,
-				0A5843792A9501A00084DCDC /* GoogleService-Info.plist in Resources */,
+				23ACB93E2A9B4D6B0065BC16 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

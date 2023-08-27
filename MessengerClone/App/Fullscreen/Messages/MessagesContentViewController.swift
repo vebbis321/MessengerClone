@@ -17,7 +17,15 @@ final class MessagesContentViewController: UIViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<Section, Item>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Item>
 
-    // MARK: - Components
+    // MARK: - Internal Components
+    lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.backgroundColor = .systemBackground
+        return collectionView
+    }()
+
+    // MARK: - Private Components
     private let searchController = UISearchController()
 
     private func swipeLayout(icon: String, text: String, size: CGFloat) -> UIImage {
@@ -58,13 +66,6 @@ final class MessagesContentViewController: UIViewController {
         return image
     }
 
-    private lazy var collectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
-        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        collectionView.backgroundColor = .systemBackground
-        return collectionView
-    }()
-
     private lazy var listLayoutSection: UICollectionLayoutListConfiguration = {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .plain)
         listConfiguration.showsSeparators = false
@@ -97,7 +98,6 @@ final class MessagesContentViewController: UIViewController {
         }
         return listConfiguration
     }()
-
 
     // MARK: - Private properties
     private var dataSource: DataSource!
@@ -255,6 +255,7 @@ extension MessagesContentViewController: UICollectionViewDelegate {
 
         collectionView.deselectItem(at: indexPath, animated: true)
     }
+    
 }
 
 // MARK: - ContentConfigurationDelegate

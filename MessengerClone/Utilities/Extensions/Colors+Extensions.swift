@@ -22,6 +22,6 @@ struct MessengerColorTheme2 {
     let tintColor = Color("TintColor")
     let placeholder = Color("Placeholder")
     let floatingLabel = Color("FloatingLabel")
-    let hyperlink = Color("Hyperlink")
+    let hyperlink = Color("HyperLink")
     let alertText = Color("AlertText")
 }

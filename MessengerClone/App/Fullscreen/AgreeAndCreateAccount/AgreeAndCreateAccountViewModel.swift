@@ -115,7 +115,7 @@ extension AgreeAndCreateAccountViewModel {
                 text:
                 """
                 You'll also receive emails from us and can opt out at \
-                any time. Learn more. Learn more
+                any time. Learn more.
                 """,
                 tappableTextAndUrlString: ["Learn more": "https://www.facebook.com/policies_center"]
             ),

@@ -30,7 +30,13 @@ final class LogInViewController: UIViewController {
             returnKey: .continue
         )
     )
-    private let passwordTextField = AuthTextField(viewModel: .init(type: .password, returnKey: .done))
+    private let passwordTextField = AuthTextField(
+        viewModel: .init(
+            type: .password,
+            placeholderOption: .custom("Password"),
+            returnKey: .done
+        )
+    )
 
     private lazy var loginBtn: AuthButton = {
         let btn = AuthButton(viewModel: .init(title: "Log in"))

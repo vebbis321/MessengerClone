@@ -47,7 +47,7 @@ final class MessengerSDWebImage: UIImageView {
 
         sd_setImage(
             with: .init(string: urlString ?? ""),
-            placeholderImage: .init(named: "PlaceholderImage"),
+            placeholderImage: .init(named: "placeholderImage"),
             context: [.imageTransformer: transformer],
             progress: nil
         ) { _, _, _, _ in }

@@ -147,7 +147,7 @@ extension MessagesViewController: MessagesContentViewControllerDelegate {
 // for disabling/enabling swipe related to cell swipe and scroll
 extension MessagesViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith _: UIGestureRecognizer) -> Bool {
-        if contentVC?.isSwipeActive ?? false {
+        if let contentVC, contentVC.isSwipeActive || contentVC.collectionView.isDragging || contentVC.collectionView.isDecelerating {
             return false
         }
 

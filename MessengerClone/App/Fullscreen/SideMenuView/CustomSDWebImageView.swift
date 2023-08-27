@@ -11,7 +11,7 @@ import SwiftUI
 struct CustomSDWebImageView: View {
     var url: URL?
     var body: some View {
-        Image("ProfileImage")
+        Image("profileImage")
             .resizable()
             .scaledToFill()
             .clipShape(Circle())
