@@ -104,10 +104,9 @@ final class MessagesViewModel {
                 }
                 return (messages + [next]).sorted(by: { $1.timestamp < $0.timestamp }) // sort by most recent message
             })
-            .sink { completion in
-                print(completion)
+            .sink { _ in
+
             } receiveValue: { [weak self] messages in
-                print(messages)
                 self?.messagesSubject.send(messages)
             }.store(in: &subscriptions)
     }

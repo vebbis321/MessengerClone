@@ -31,6 +31,9 @@ final class MessengerSDWebImage: UIImageView {
     private func setup() {
         sd_imageTransition = .fade
 
+        layer.cornerRadius = size / 2
+        clipsToBounds = true
+
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: size).isActive = true
         widthAnchor.constraint(equalToConstant: size).isActive = true

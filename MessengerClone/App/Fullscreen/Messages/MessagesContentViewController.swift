@@ -80,7 +80,6 @@ final class MessagesContentViewController: UIViewController {
                 self?.presentActionSheet(dismiss: {
                     completion(true)
                 })
-                print(action)
             }
             let moreAction = UIContextualAction(style: .normal, title: nil, handler: moreHandler)
             moreAction.image = self?.swipeLayout(icon: "ellipsis.circle.fill", text: "More", size: 16)

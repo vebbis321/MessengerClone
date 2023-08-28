@@ -24,13 +24,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window.makeKeyAndVisible()
 
-        // test
-//        guard let windowScene = (scene as? UIWindowScene) else { return }
-//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-//        window?.windowScene = windowScene
-//        let rootVC = UINavigationController(rootViewController: TextfieldVC2())
-//        window?.rootViewController = rootVC
-//        window?.makeKeyAndVisible()
-//        print(getWindowHeight())
     }
 }

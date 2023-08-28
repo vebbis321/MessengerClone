@@ -141,8 +141,8 @@ class LastMessageCellContentView: UIView, UIContentView {
         userSubscription = LocalDatabase
             .shared
             .observeSuggestedUser(with: uuid)
-            .sink { completion in
-                print(completion)
+            .sink { _ in
+
             } receiveValue: { [weak self] user in
                 self?.imageView.configure(with: user?.profileImageUrl)
                 self?.nameLabel.text = user?.name

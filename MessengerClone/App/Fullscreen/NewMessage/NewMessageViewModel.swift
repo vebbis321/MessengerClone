@@ -41,7 +41,6 @@ final class NewMessageViewModel {
                 self?.updatePropertitesWith(action: action)
             })
             .map { [weak self] action in
-                print("ACTION \(action)")
                 return self?.transform(action: action) ?? .suggestedUsers([])
             }.assign(to: &$statePublisher)
     }
@@ -86,13 +85,8 @@ final class NewMessageViewModel {
             .map({ cachedUsers -> [UserPublic] in
                 return cachedUsers.filter { $0.uuid != Auth.auth().currentUser?.uid }.map { .init(cachedUser: $0) }
             })
-            .sink { completion in
-                switch completion {
-                case .finished:
-                    print("Fin")
-                case let .failure(err):
-                    print(err)
-                }
+            .sink { _ in
+
             } receiveValue: { [weak self] users in
                 self?.eventSubject.send(.updatedSugestedUsers(users))
             }.store(in: &subscriptions)
@@ -103,7 +97,6 @@ final class NewMessageViewModel {
         switch action {
         case let .tapRow(user):
             if let idx = selectedUsers.firstIndex(where: { $0.uuid == user.uuid }) {
-                print("DID remove")
                 selectedUsers.remove(at: idx)
             } else {
                 selectedUsers.append(user)
@@ -171,7 +164,6 @@ final class NewMessageViewModel {
             }
 
         default:
-            print("HELLO")
             state = statePublisher
         }
 
@@ -199,7 +191,6 @@ final class NewMessageViewModel {
                     .limit(to: 5),
                 ]
             )
-            print(result)
             return result
 
         } catch {

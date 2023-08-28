@@ -191,7 +191,6 @@ final class AssetGridView: UIView {
 
         dataSource.apply(snapshot, animatingDifferences: animated)
 
-        print("Number of sections visible: \(dataSource.numberOfSections(in: collectionView))")
     }
 }
 

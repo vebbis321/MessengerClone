@@ -107,21 +107,16 @@ final class ChatControllerCollectionViewCell: UICollectionViewCell {
 
     @objc private func keyboardWillAppear(notification: NSNotification) {
         // Do something here
-        print("Appear")
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             let height = keyboardSize.height - (parent?.view.safeAreaInsets.bottom ?? .zero)
-            print("Keyboard height in cell: \(height)")
-
             childVC?.keyboardBecameActive(height: height)
         }
     }
 
     @objc private func keyboardWillDisappear(notification _: NSNotification) {
-        print("DIs")
         let parent = parent!
 
         if parent.parentHideKeyboard {
-            print("HIDEALLL")
             childVC?.hideAll()
             parent.parentHideKeyboard = false
         } else {

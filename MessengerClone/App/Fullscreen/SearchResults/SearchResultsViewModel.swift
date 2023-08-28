@@ -79,7 +79,7 @@ final class SearchResultsViewModel {
             .sink { completion in
                 switch completion {
                 case .finished:
-                    print("Fin")
+                    break
                 case let .failure(err):
                     print(err)
                 }

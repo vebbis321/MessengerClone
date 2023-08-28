@@ -186,8 +186,6 @@ class ChatContentViewController: UIViewController {
         wrapperHeightConstraint.constant = height
 
         if state == .show {
-            print("SHOW")
-
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
                 self.wrapperView.alpha = state.wrapperAlpha
                 self.view.layoutIfNeeded()
@@ -195,7 +193,6 @@ class ChatContentViewController: UIViewController {
             })
 
         } else {
-            print("HIDE")
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
                 self.wrapperView.alpha = state.wrapperAlpha
                 UIView.performWithoutAnimation {
@@ -212,8 +209,6 @@ class ChatContentViewController: UIViewController {
         for datum in data {
             snapshot.appendItems(datum.values, toSection: datum.key)
         }
-
-        print("GOT UPDATE \(data.count)")
 
         dataSource.apply(snapshot, animatingDifferences: true) { [weak self] in
             guard (self?.snapshot.numberOfItems ?? 0) > 5 else { return }
@@ -259,8 +254,6 @@ private extension ChatContentViewController {
             guard let self else { fatalError() }
 
             let section = self.dataSource.snapshot().sectionIdentifiers[sectionIndex]
-
-            print("Section: \(section)")
 
             switch section {
             case .loadingChat:

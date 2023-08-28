@@ -2,7 +2,7 @@
 
 This is the source code for the Messenger clone application. The app demonstrates how you can build the core functionality of Messenger in Swift, supporting iOS 14+ without any UI-libraries except SDWebImage. Since the app supports iOS 14, the application is built as a hybrid where 95% of the UI is UIKit and 5% is SwiftUI.
 
-Tutorials and a full demo are on my YouTube channel, with articles to accommodate them on my [website](https://thel.foo/series/messenger-clone/).
+Tutorials and a full demo are on my [YouTube channel](https://www.youtube.com/watch?v=glFQZdgghDI), with articles to accommodate them on my [website](https://thel.foo/series/messenger-clone/).
 
 # About the project
 

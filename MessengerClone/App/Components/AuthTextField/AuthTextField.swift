@@ -455,9 +455,6 @@ final class TextfieldVC2: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(txtField.frame.height)
-        print(txtField2.frame.height)
-        print(txtField3.frame.height)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             self.txtField.isValidText()

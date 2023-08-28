@@ -211,7 +211,6 @@ final class MessageBarView: UIStackView {
 
     // MARK: - Functionality
     private func handleTextStateChanged() {
-        print("🚦 State Changed")
         textViewHeightConstraint.constant = viewModel.getTextViewHeight()
         textView.layoutIfNeeded()
 

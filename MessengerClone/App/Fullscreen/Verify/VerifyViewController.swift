@@ -58,7 +58,6 @@ final class VerifyViewController: UIViewController {
     // MARK: - Listen
     private func listen() {
         guard timerSubscription == nil else { return }
-        print("Start timer")
 
         timerSubscription = timer
             .sink { [weak self] _ in
@@ -70,12 +69,9 @@ final class VerifyViewController: UIViewController {
     private func checkIfUserIsVerified() {
         Task(priority: .high) {
             await viewModel.reloadUser()
-            print("reloaded user")
+
             if viewModel.isEmailVerified() {
-                print("verified!")
                 coordinator?.parentCoordinator?.userVerifiedEmail()
-            } else {
-                print("not verified")
             }
         }
     }
@@ -85,7 +81,6 @@ final class VerifyViewController: UIViewController {
     }
 
     @objc private func applicationDidEnterBackground() {
-        print("DID Enter background")
         timerSubscription?.cancel()
         timerSubscription = nil
     }

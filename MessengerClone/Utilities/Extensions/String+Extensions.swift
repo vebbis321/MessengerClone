@@ -82,7 +82,6 @@ extension String {
             }
         }
 
-        print(substringArray)
         return substringArray
     }
 }
