@@ -33,16 +33,16 @@ Here are some screenshots from the authentication flow:
 
 | Messenger                                                                     | Messenger clone                                                                    |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <img src="Screenshots/Messenger/SignIn.png" width="287" height="621">         | <img src="Screenshots/MessengerClone/SignIn.png" width="287" height="621">         |
-| <img src="Screenshots/Messenger/SignInFocus.png" width="287" height="621">    | <img src="Screenshots/MessengerClone/SignInFocus.png" width="287" height="621">    |
-| <img src="Screenshots/Messenger/SignInPassword.png" width="287" height="621"> | <img src="Screenshots/MessengerClone/SignInPassword.png" width="287" height="621"> |
-| <img src="Screenshots/Messenger/AuthStart.png" width="287" height="621">      | <img src="Screenshots/MessengerClone/AuthStart.png" width="287" height="621">      |
-| <img src="Screenshots/Messenger/Name.png" width="287" height="621">           | <img src="Screenshots/MessengerClone/Name.png" width="287" height="621">           |
-| <img src="Screenshots/Messenger/NameError.png" width="287" height="621">      | <img src="Screenshots/MessengerClone/NameError.png" width="287" height="621">      |
-| <img src="Screenshots/Messenger/Birthday.png" width="287" height="621">       | <img src="Screenshots/MessengerClone/Birthday.png" width="287" height="621">       |
-| <img src="Screenshots/Messenger/BirthdayWheel.png" width="287" height="621">  | <img src="Screenshots/MessengerClone/BirthdayWheel.png" width="287" height="621">  |
-| <img src="Screenshots/Messenger/BirthdaySheet.png" width="287" height="621">  | <img src="Screenshots/MessengerClone/BirthdaySheet.png" width="287" height="621">  |
-| <img src="Screenshots/Messenger/Agree.png" width="287" height="621">          | <img src="Screenshots/MessengerClone/Agree.png" width="287" height="621">          |
+| <img src="Screenshots/Messenger/SignIn.PNG" width="287" height="621">         | <img src="Screenshots/MessengerClone/SignIn.PNG" width="287" height="621">         |
+| <img src="Screenshots/Messenger/SignInFocus.png" width="287" height="621">    | <img src="Screenshots/MessengerClone/SignInFocus.PNG" width="287" height="621">    |
+| <img src="Screenshots/Messenger/SignInPassword.PNG" width="287" height="621"> | <img src="Screenshots/MessengerClone/SignInPassword.PNG" width="287" height="621"> |
+| <img src="Screenshots/Messenger/AuthStart.PNG" width="287" height="621">      | <img src="Screenshots/MessengerClone/AuthStart.PNG" width="287" height="621">      |
+| <img src="Screenshots/Messenger/Name.PNG" width="287" height="621">           | <img src="Screenshots/MessengerClone/Name.PNG" width="287" height="621">           |
+| <img src="Screenshots/Messenger/NameError.PNG" width="287" height="621">      | <img src="Screenshots/MessengerClone/NameError.PNG" width="287" height="621">      |
+| <img src="Screenshots/Messenger/Birthday.PNG" width="287" height="621">       | <img src="Screenshots/MessengerClone/Birthday.PNG" width="287" height="621">       |
+| <img src="Screenshots/Messenger/BirthdayWheel.PNG" width="287" height="621">  | <img src="Screenshots/MessengerClone/BirthdayWheel.PNG" width="287" height="621">  |
+| <img src="Screenshots/Messenger/BirthdaySheet.PNG" width="287" height="621">  | <img src="Screenshots/MessengerClone/BirthdaySheet.PNG" width="287" height="621">  |
+| <img src="Screenshots/Messenger/Agree.PNG" width="287" height="621">          | <img src="Screenshots/MessengerClone/Agree.PNG" width="287" height="621">          |
 
 > **_NOTE:_**  The screenshots are from 2023, but Meta has updated their
 > UI recently.
