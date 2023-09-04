@@ -1,5 +1,7 @@
 # Messenger clone iOS 14+
 
+# **This repo is read-only. Continous build with professional architecture on [repo](https://github.com/vebbis321/Messenger-MVVM-iOS-Professional).**
+
 This is the source code for the Messenger clone application. The app demonstrates how you can build the core functionality of Messenger in Swift, supporting iOS 14+ without any UI-libraries except SDWebImage. Since the app supports iOS 14, the application is built as a hybrid where 95% of the UI is UIKit and 5% is SwiftUI.
 
 Tutorials and a full demo are on my [YouTube channel](https://www.youtube.com/watch?v=glFQZdgghDI), with articles to accommodate them on my [website](https://thel.foo/series/messenger-clone/).
@@ -87,9 +89,9 @@ userChats // the amount of chats (.childAdded on userId)
 
 ## What should be done
 
-Here is a list of things I would do if I had more time. I may fork the repository in the future and implement them.
+Here is a list of things I would do if I had more time. I may clone the repository in the future and implement them.
 
-- [ ] Move all the UI into a seperate repo, like [Finn](https://github.com/finn-no/FinniversKit). Why? The code is too long, and it is hard to test the components. There is also room for composition.
+- [ ] Move all the UI into a separate repo, like [Finn](https://github.com/finn-no/FinniversKit). Why? The code is too long, and it is hard to test the components. There is also room for composition.
 - [ ] Create a cloud function for creating an account. Why? A single operation for authenticating users and creating documents can’t be implemented through Firebase Auth and Firestore.
 - [ ] Clean up the flows where users and chats are loaded simultaneously. Why? All the errors aren't properly handled, and there is some inconsistency.
 - [ ] Add the option for group chats and update the components accordingly.
@@ -99,7 +101,7 @@ Here is a list of things I would do if I had more time. I may fork the repositor
 1. Clone the repo
 2. Create a new project in your Firebase console by clicking "Add project"
 3. Create a Cloud Firestore database and RTDB database
-4. Enable sign in with email and password in Firebase Auth
+4. Enable sign-in with email and password in Firebase Auth
 5. Add the GoogleService-Info.plist to the project
 6. Run the app
 
